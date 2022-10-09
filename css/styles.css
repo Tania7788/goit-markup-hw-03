@@ -1,0 +1,223 @@
+:root {
+    --main-text-color: #FFFFFF;
+    --title-color: #212121;
+    --secondary-text-color: #757575;
+    --hover-color: #2196F3;
+    --main-background: #2F303A;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal
+}
+h1,h2,h3,h4,h5,h6,p,ul,a {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.header-items {
+    display: flex;
+}
+.header-links {
+    display: flex;
+    margin-left: 93px;
+}
+.header-link:not(first-child) {
+    margin-left: 50px;
+}
+.header-contacts {
+    display: flex;
+    margin-left: 290px;
+}
+.telefon {
+    margin-left: 50px;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: block;
+}
+.hero-section {
+    background-color: var(--main-background);
+}
+.hero-wrap {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.main-title {
+    display: block;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+.hero-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+    cursor: pointer;
+    margin: 0 auto;
+}
+.button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    cursor: pointer;
+}
+.button:hover, 
+.button:focus {
+    color: var(--main-text-color);
+}
+.first-word {
+    color: var(--hover-color);
+}
+.hero-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 95px;
+    flex-basis: calc((100% - 90px) / 4);
+}
+.doings-section {
+    margin-top: 95px;
+    padding-bottom: 95px;
+}
+.list-photo {
+    display: flex;
+    justify-content: space-between;
+}
+.team-section {
+    background-color: #F5F4FA;
+}
+.people-photo {
+    display: flex;
+    padding-bottom: 95px;
+    justify-content: space-between;
+}
+.list {
+    list-style: none;
+}
+.link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--title-color);
+}
+.link:hover, 
+.link:focus {
+    color: var(--hover-color);
+}
+.main-portfolio {
+    padding-top: 95px;
+    padding-bottom: 65px;
+}
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio-list-item {
+    padding-bottom: 30px;
+}
+footer {
+    background-color: var(--main-background);
+}
+.footer-logo {
+    padding-top: 60px;
+}
+.footer-list {
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+.footer-links {
+    display: block;
+    padding-bottom: 10px;
+}
+.contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,1;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+.address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,7;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+.second-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    display: block;
+    padding-top: 95px;
+    margin-bottom: 50px;
+}
+.third-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,4;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+.studio {
+    text-transform: uppercase;
+}
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,7;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
