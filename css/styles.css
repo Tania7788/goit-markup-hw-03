@@ -51,11 +51,9 @@ h1,h2,h3,h4,h5,h6,p,ul,a {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,2;
+    line-height: 31px;
     letter-spacing: 0.03em;
     text-decoration: none;
-    padding-top: 25px;
-    padding-bottom: 25px;
     display: block;
 }
 .hero-section {
@@ -75,7 +73,7 @@ h1,h2,h3,h4,h5,h6,p,ul,a {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1,9;
+    line-height: 30px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -83,29 +81,46 @@ h1,h2,h3,h4,h5,h6,p,ul,a {
     color: var(--main-text-color);
     cursor: pointer;
     margin: 0 auto;
+    background-color: var(--hover-color);
+    padding: 10px 32px;
+    border: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .button {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,6;
+    line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
     cursor: pointer;
+    padding: 6px 22px;
+    border: #F5F4FA;
+    border-radius: 4px;
+    margin-left: 8px;
+    background-color: #F5F4FA;
+
 }
 .button:hover, 
 .button:focus {
     color: var(--main-text-color);
+    background-color: var(--hover-color);
 }
 .first-word {
     color: var(--hover-color);
+}
+.second-word {
+    color: #000000;
 }
 .hero-list {
     display: flex;
     justify-content: space-between;
     padding-top: 95px;
-    flex-basis: calc((100% - 90px) / 4);
+}
+.hero-list-text:not(:first-of-type) {
+    margin-left: 30px;
 }
 .doings-section {
     margin-top: 95px;
@@ -123,6 +138,23 @@ h1,h2,h3,h4,h5,h6,p,ul,a {
     padding-bottom: 95px;
     justify-content: space-between;
 }
+.people-card {
+    background-color: var(--main-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.people-title {
+display: flex;
+justify-content: center;
+margin-bottom: 5px;
+padding-top: 15px;
+}
+.description-people {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
 .list {
     list-style: none;
 }
@@ -130,7 +162,7 @@ h1,h2,h3,h4,h5,h6,p,ul,a {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,1;
+    line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--title-color);
@@ -154,7 +186,20 @@ h1,h2,h3,h4,h5,h6,p,ul,a {
     justify-content: space-between;
 }
 .portfolio-list-item {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+    max-width: 370px;
+}
+.description-wrap {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.portfolio-title {
+    padding-bottom: 2px;
+}
+.portfolio-description {
+    padding-bottom: 2px;
 }
 footer {
     background-color: var(--main-background);
@@ -173,21 +218,24 @@ footer {
 .contact {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,1;
+    line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 }
 .address {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,7;
+    line-height: 16px;
     letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+.second-footer-word {
     color: var(--main-text-color);
 }
 .main-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,4;
+    line-height: 60px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -196,7 +244,7 @@ footer {
 .second-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,2;
+    line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
@@ -207,7 +255,7 @@ footer {
 .third-title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1,4;
+    line-height: 36px;
     letter-spacing: 0.03em;
     color: var(--title-color);
 }
@@ -217,7 +265,7 @@ footer {
 .description {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,7;
+    line-height: 30px;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
