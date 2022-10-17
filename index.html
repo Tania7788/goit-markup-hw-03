@@ -14,9 +14,10 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header-container"
+        <div class="container header-container">
     <nav>
-        <a class="logo" href="index.html"><span class="first-word">Web</span><span class="second-word">Studio</span></a>
+        <div class="nav-wrap">
+        <a class="logo header-logo" href="index.html"><span class="first-word">Web</span><span class="second-word">Studio</span></a>
         <div class="header-items">
         <ul class="list">
             <div class="header-links">
@@ -31,15 +32,25 @@
             </li>
             </div>
         </ul>
+        </div>
     </nav>
-    <ul class="list header-contacts">
-        <li>
-            <a class="link contact" href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a>
-        </li>
-        <li>
-            <a class="link contact telefon" href="tel:+380961111111" target="_blank">+38 096 111 11 11</a>
-        </li>
-    </ul>
+<ul class="list header-contacts">
+    <li class="header-icons">
+        <a class="link contact header-mail" href="mailto:info@devstudio.com" target="_blank">
+            <svg width="16px" height="12px" class="header-svg">
+                <use href="../images/sprite.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com</a>
+    </li>
+    <li>
+        <a class="link contact telefon" href="tel:+380961111111" target="_blank">
+            <svg width="10px" height="16px" class="header-svg">
+                <use href="../images/sprite.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a>
+    </li>
+</ul>
+</div>
         </div>
     </header>
     <main>
@@ -54,24 +65,52 @@
 <ul class="list hero-list">
     <li class="hero-list-text">
         <div class="hero-list-wrap">
+            <div class="hero-icon">
+                <a href="">
+                    <svg width="70px" height="70px" class="hero-svg">
+                        <use href="../images/sprite.svg#icon-hero1"></use>
+                    </svg>
+                </a>
+            </div>
         <h3 class="third-title studio">Увага до деталей</h3>
         <p class="hero-description description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
     </div>
     </li>
     <li class="hero-list-text">
         <div class="hero-list-wrap">
+            <div class="hero-icon">
+                <a href="">
+                    <svg width="70px" height="70px" class="hero-svg">
+                        <use href="../images/sprite.svg#icon-hero2"></use>
+                    </svg>
+                </a>
+            </div>
         <h3 class="third-title studio">Пунктуальність</h3>
         <p class="hero-description description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
     </div>
     </li>
     <li class="hero-list-text">
         <div class="hero-list-wrap">
+            <div class="hero-icon">
+                <a href="">
+                    <svg width="70px" height="70px" class="hero-svg">
+                        <use href="../images/sprite.svg#icon-hero3"></use>
+                    </svg>
+                </a>
+            </div>
         <h3 class="third-title studio">Планування</h3>
         <p class="hero-description description">Так само консультація з широким активом значною мірою зумовлює.</p>
     </div>
     </li>
     <li class="hero-list-text">
         <div class="hero-list-wrap">
+            <div class="hero-icon">
+                <a href="">
+                    <svg width="70px" height="70px" class="hero-svg">
+                        <use href="../images/sprite.svg#icon-hero4"></use>
+                    </svg>
+                </a>
+            </div>
         <h3 class="third-title studio">Сучасні технології</h3>
         <p class="hero-description description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
     </div>
@@ -101,21 +140,184 @@
                         <img src="./images/person1.jpg" alt="Ігор Дем'яненко Product Designer" width="270" height="260">
                         <h3 class="third-title people-title">Ігор Дем'яненко</h3>
                         <p class="description description-people">Product Designer</p>
+                                                    <ul class="list people-svg-list">
+                                                        <li class="people-icon">
+                                                            <a href="">
+                                                                <svg width="20px" height="20px" class="people-svg">
+                                                                    <use href="../images/sprite.svg#icon-instagram"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="people-icon">
+                                                            <a href="">
+                                                                <svg width="20px" height="20px" class="people-svg">
+                                                                    <use href="../images/sprite.svg#icon-twitter"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="people-icon">
+                                                            <a href="">
+                                                                <svg width="20px" height="20px" class="people-svg">
+                                                                    <use href="../images/sprite.svg#icon-facebook"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                        <li class="people-icon">
+                                                            <a href="">
+                                                                <svg width="20px" height="20px" class="people-svg">
+                                                                    <use href="../images/sprite.svg#icon-linkedin"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                     </li>
                     <li class="people-card">
                         <img src="./images/person2.jpg" alt="Ольга Рєпіна Frontend Developer" width="270" height="260">
                          <h3 class="third-title people-title">Ольга Рєпіна</h3>
                              <p class="description description-people">Frontend Developer</p>
+                                                        <ul class="list people-svg-list">
+                                                            <li class="people-icon">
+                                                                <a href="">
+                                                                    <svg width="20px" height="20px" class="people-svg">
+                                                                        <use href="../images/sprite.svg#icon-instagram"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                            <li class="people-icon">
+                                                                <a href="">
+                                                                    <svg width="20px" height="20px" class="people-svg">
+                                                                        <use href="../images/sprite.svg#icon-twitter"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                            <li class="people-icon">
+                                                                <a href="">
+                                                                    <svg width="20px" height="20px" class="people-svg">
+                                                                        <use href="../images/sprite.svg#icon-facebook"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                            <li class="people-icon">
+                                                                <a href="">
+                                                                    <svg width="20px" height="20px" class="people-svg">
+                                                                        <use href="../images/sprite.svg#icon-linkedin"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
                     </li>
                     <li class="people-card">
                         <img src="./images/person3.jpg" alt="Микола Тарасов Marketing" width="270" height="260">
                          <h3 class="third-title people-title">Микола Тарасов</h3>
                              <p class="description description-people">Marketing</p>
+                                                        <ul class="list people-svg-list">
+                                                            <li class="people-icon">
+                                                                <a href="">
+                                                                    <svg width="20px" height="20px" class="people-svg">
+                                                                        <use href="../images/sprite.svg#icon-instagram"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                            <li class="people-icon">
+                                                                <a href="">
+                                                                    <svg width="20px" height="20px" class="people-svg">
+                                                                        <use href="../images/sprite.svg#icon-twitter"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                            <li class="people-icon">
+                                                                <a href="">
+                                                                    <svg width="20px" height="20px" class="people-svg">
+                                                                        <use href="../images/sprite.svg#icon-facebook"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                            <li class="people-icon">
+                                                                <a href="">
+                                                                    <svg width="20px" height="20px" class="people-svg">
+                                                                        <use href="../images/sprite.svg#icon-linkedin"></use>
+                                                                    </svg>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
                     </li>
                      <li class="people-card">
                          <img src="./images/person4.jpg" alt="Михайло Єрмаков UI Designer" width="270" height="260">
                          <h3 class="third-title people-title">Михайло Єрмаков</h3>
                              <p class="description description-people">UI Designer</p>
+                             <ul class="list people-svg-list">
+                                <li class="people-icon">
+                                    <a href="">
+                                        <svg width="20px" height="20px" class="people-svg">
+                                            <use href="../images/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="people-icon">
+                                    <a href="">
+                                        <svg width="20px" height="20px" class="people-svg">
+                                            <use href="../images/sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="people-icon">
+                                    <a href="">
+                                        <svg width="20px" height="20px" class="people-svg">
+                                            <use href="../images/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="people-icon">
+                                    <a href="">
+                                        <svg width="20px" height="20px" class="people-svg">
+                                            <use href="../images/sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                             </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="container">
+                <h2 class="second-title">Постійні клієнти</h2>
+                <ul class="list client-icons">
+                    <li>
+                        <a href="">
+                            <svg width="106px" height="60px" class="icon-logo">
+                                <use href="../images/sprite.svg#icon-logo"></use>
+                            </svg>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="106px" height="60px" class="icon-logo">
+                                <use href="../images/sprite.svg#icon-logo-2"></use>
+                            </svg>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="106px" height="60px" class="icon-logo">
+                                <use href="../images/sprite.svg#icon-logo-3"></use>
+                            </svg>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="106px" height="60px" class="icon-logo">
+                                <use href="../images/sprite.svg#icon-logo-4"></use>
+                            </svg>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="106px" height="60px" class="icon-logo">
+                                <use href="../images/sprite.svg#icon-logo-5"></use>
+                            </svg>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="106px" height="60px" class="icon-logo">
+                                <use href="../images/sprite.svg#icon-logo-6"></use>
+                            </svg>
                     </li>
                 </ul>
             </div>
@@ -123,6 +325,8 @@
     </main>
     <footer>
         <div class="container">
+            <ul class="list footer-wrap">
+                <li>
         <a class="logo footer-logo" href=""><span class="first-word">Web</span><span class="second-footer-word">Studio</span></a>
         <address>
             <ul class="list footer-list">
@@ -137,6 +341,41 @@
                 </li>
             </ul>
         </address>
+        </li>
+        <li class="footer-icons-list">
+            <h3 class="footer-title">приєднуйтесь</h3>
+            <ul class="list footer-icons">
+                <li class="footer-icon">
+                    <a href="">
+                        <svg width="20px" height="20px" class="footer-svg">
+                        <use href="../images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="">
+                        <svg width="20px" height="20px" class="footer-svg">
+                            <use href="../images/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="">
+                        <svg width="20px" height="20px" class="footer-svg">
+                            <use href="../images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-icon">
+                    <a href="">
+                        <svg width="20px" height="20px" class="footer-svg">
+                            <use href="../images/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        </ul>
         </div>
     </footer>
 </body>
